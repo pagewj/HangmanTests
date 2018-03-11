@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <title>Hangman</title>
+  <style>
+    .hidden {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <div id="startWrapper">
+    <form id="difficultySelect">
+      <select id="difficulty">
+        <option value="easy">Easy</option>
+        <option value="medium">Medium</option>
+        <option value="hard">Hard</option>
+      </select>
+      <input type="submit" value="Start!" />
+    </form>
+  </div>
+  <div id="gameWrapper" class="hidden">
+    <form id="guessForm">
+      <input type="text" id="guessInput" placeholder="Guess a letter!" />
+      <input type="submit" id="guessSubmitButton" value="Guess">
+    </form>
+    <button type="button" id="resetGame" class="hidden">Play Again!</button>
+    <div id="guesses"></div><br>
+    <div id="wordHolder"></div><br>
+    <canvas id="canvas" height="500" width="350" style="border: 1px solid black"></canvas>
+  </div>
+  <script src="index.js" type="module"></script>
+</body>
+</html>
