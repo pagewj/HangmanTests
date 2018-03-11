@@ -1,0 +1,44 @@
+{
+  "name": "hangmanprofessors",
+  "version": "0.0.1",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "jest": {
+    "moduleNameMapper": {
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/assetsTransformer.js",
+      "\\.(css|less)$": "<rootDir>/assetsTransformer.js"
+    },
+    "automock": false,
+    "setupFiles": [
+      "./tests/setupJest.js"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.uc.edu:livelyar/IT3049C-Hangman-Game.git"
+  },
+  "author": "Andrew Lively <livelyar@ucmail.uc.edu>",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "canvas-prebuilt": "^1.6.5-prerelease.1",
+    "jest": "^21.2.1",
+    "jest-fetch-mock": "^1.2.1",
+    "jquery": "^3.2.1"
+  },
+  "devDependencies": {
+    "babel-jest": "^21.2.0",
+    "babel-preset-env": "^1.6.0",
+    "chai": "^4.1.2",
+    "mocha": "^5.0.4",
+    "regenerator-runtime": "^0.11.0"
+  },
+  "description": "test packages",
+  "keywords": [
+    "test"
+  ]
+}
